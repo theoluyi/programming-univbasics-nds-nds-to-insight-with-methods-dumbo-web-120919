@@ -10,23 +10,14 @@ require 'directors_database'
 def directors_totals(nds)
   
   director_gross = {}
-  nil ###
+  nil ### idk what this is
   director_index = 0
-  
-  
-  director_name = director_data[:name]
   
   while director_index < nds.count do
     director_data = nds[director_index] ### relocated
-    new_director_gross = gross_for_director(director_data)
-    director_gross[director_name] = new_director_gross
+    director_gross[director_data[:name]] = gross_for_director(director_data) ### reduced number of variables and lines of code
     
     director_index += 1
-    
-    puts director_index
-    puts director_name
-    puts gross_for_director(director_data)
-    
   end
   
   director_gross
@@ -41,13 +32,11 @@ end
 # Note to self: this is the first order method 
 
 def gross_for_director(director_data)
-    
-  result = {}
   movie_gross = 0
   movie_index = 0
   
   director_movies = director_data[:movies] # this is pointing to an array of hashes
-  puts director_movies
+  
   director_name = director_data[:name] # √
   
   while movie_index < director_movies.count do
