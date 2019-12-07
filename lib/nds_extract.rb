@@ -8,7 +8,6 @@ require 'directors_database'
 
 
 def directors_totals(nds)
-  puts directors_totals(directors_database)['Robert Zemeckis']
   
   director_gross = {}
   director_index = 0
