@@ -10,7 +10,7 @@ require 'directors_database'
 def directors_totals(nds)
   
   director_gross = {}
-  nil ### idk what this is
+   ### idk what this is
   director_index = 0
   
   while director_index < nds.count do
