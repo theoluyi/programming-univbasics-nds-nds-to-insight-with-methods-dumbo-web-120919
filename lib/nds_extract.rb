@@ -1,5 +1,6 @@
 require 'directors_database'
 
+# Note to self: i cleaned this up slightly, none of the changes seemed especially significant, and now it works. I guess it was just some pointer or syntax being a bit off. This is definitely the type of problem I shouldn't waste too much time trying to debug because it was something kind of detailed and subtle that I'm still not sure about that wasn't working. Could submit my original code (saved as first draft) to other students to see if they can identify the error. Otherwise mustn't obsess. 
 # learn --fail-fast
 
 # INSTRUCTIONS
