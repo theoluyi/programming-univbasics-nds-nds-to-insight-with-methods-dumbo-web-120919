@@ -10,12 +10,14 @@ require 'directors_database'
 def directors_totals(nds)
   
   director_gross = {}
+  nil ###
   director_index = 0
   
-  director_data = nds[director_index]
+  
   director_name = director_data[:name]
   
   while director_index < nds.count do
+    director_data = nds[director_index] ### relocated
     new_director_gross = gross_for_director(director_data)
     director_gross[director_name] = new_director_gross
     
